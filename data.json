@@ -1,3 +1,19 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "title": "write some code",
+      "completed": false,
+      "id": "2492617837"
+    },
+    {
+      "title": "finish talking",
+      "completed": false,
+      "id": "K9lzJ8y"
+    },
+    {
+      "title": "record from curl",
+      "completed": false,
+      "id": "3195188192"
+    }
+  ]
 }

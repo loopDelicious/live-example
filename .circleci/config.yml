@@ -1,0 +1,15 @@
+version: 2.1
+orbs:
+  newman: postman/newman@1.0.0
+jobs:
+  newman-collection-run:
+    executor: newman/postman-newman-docker
+    steps:
+      - checkout
+      - run: npm install
+      - run:
+          name: Start TodoMVC server
+          command: npm start
+          background: true
+      - newman/newman-run:
+          collection: ./collection.json
